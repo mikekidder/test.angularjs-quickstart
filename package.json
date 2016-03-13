@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "My personal demo of Angular2 Quickstart",
   "scripts": {
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",    
     "tsc": "tsc",
-    "tsc:w": "tsc -w",    
+    "tsc:w": "tsc -w",
     "lite": "lite-server",
-    "go": "concurrent \"npm run tsc:w\" \"npm run lite\" "
+    "typings": "typings",
+    "postinstall": "typings install" 
   },
   "keywords": [],
   "author": "",
