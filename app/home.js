@@ -11,27 +11,27 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var AppComponent;
+    var Home;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            Home = (function () {
+                function Home() {
                 }
-                AppComponent = __decorate([
+                Home = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        template: '<h1>Angular2 demo using SystemJS</h1>'
+                        selector: 'app-home',
+                        template: "<h1>Angular2 + Routing demo using SystemJS</h1>"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], Home);
+                return Home;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("Home", Home);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=home.js.map
